@@ -20,5 +20,5 @@ We collect only what is necessary to deliver your digital items:
 For matters regarding your data privacy, you may reach out through the sanctuary channels.
 
 ---
-*Last updated: 2024*
+*Last updated: 2026*
 *"Privacy is the companion of peace."*
