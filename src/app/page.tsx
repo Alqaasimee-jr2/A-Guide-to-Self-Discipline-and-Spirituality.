@@ -239,10 +239,10 @@ export default function Home() {
         <div className="max-w-screen-xl mx-auto flex flex-col items-center gap-12 text-center text-on-surface-variant">
           <div className="text-2xl font-serif italic text-primary">A New Horizon</div>
           <nav className="flex flex-wrap justify-center gap-12 text-[10px] uppercase font-bold tracking-[0.3em]" aria-label="Footer links">
-            <a className="hover:text-primary transition-colors" href="#">Library</a>
-            <a className="hover:text-primary transition-colors" href="#">Mission</a>
-            <a className="hover:text-primary transition-colors" href="#">Spirituality</a>
-            <a className="hover:text-primary transition-colors" href="#">Privacy</a>
+            <a className="hover:text-primary transition-colors" href="#disciplines">Library</a>
+            <a className="hover:text-primary transition-colors" href="#philosophy">Mission</a>
+            <a className="hover:text-primary transition-colors" href="#path">Spirituality</a>
+            <a className="hover:text-primary transition-colors" href="/privacy">Privacy</a>
           </nav>
           <div className="space-y-6">
             <p className="text-sm font-serif italic opacity-70">"Growth is not a destination; it is a way of being."</p>
