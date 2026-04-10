@@ -1,0 +1,23 @@
+{
+  "name": "A New Horizon | Guide to Self-Discipline",
+  "short_name": "Sanctuary",
+  "description": "A digital sanctuary for self-discipline and alignment.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F5F5DC",
+  "theme_color": "#4F7942",
+  "icons": [
+    {
+      "src": "/assets/bonsai_zen.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/bonsai_zen.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

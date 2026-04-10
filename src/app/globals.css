@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600;700&family=Jost:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Bodoni Moda", serif;
+  --font-sans: "Jost", sans-serif;
+
+  --color-primary: #4F7942; /* Deep Sage */
+  --color-primary-dim: #3D5E33;
+  --color-on-primary: #F5F5DC;
+  --color-surface: #F5F5DC; /* Parchment */
+  --color-on-surface: #2C3E50; /* Midnight Slate */
+  --color-on-surface-variant: #708090; /* Slate Grey */
+  --color-outline: #708090;
+  --color-outline-variant: #D6D6C2;
+  --color-primary-container: #E2E2D0;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-sans antialiased selection:bg-primary/20;
+  }
+}
+
+.bonsai-motif {
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+.reflective-scroll {
+  width: 1px;
+  height: 100px;
+  background: var(--color-primary);
+  opacity: 0.3;
+}
+
+.btn-zen {
+  @apply px-10 py-5 rounded-sm text-base font-semibold tracking-wide transition-all duration-500 cursor-pointer;
+}
+
+.btn-primary {
+  @apply bg-primary text-on-primary hover:bg-primary-dim shadow-xl shadow-primary/10;
+}
+
+.btn-secondary {
+  @apply bg-transparent border border-outline-variant text-on-surface hover:bg-outline-variant/10;
+}
+
+.glass-panel {
+  @apply bg-surface/80 backdrop-blur-xl border border-outline-variant/10;
+}
