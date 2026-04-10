@@ -1,9 +1,11 @@
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function sendSanctuaryEmail(email: string) {
   try {
+    if (!process.env.RESEND_API_KEY) {
+      throw new Error("RESEND_API_KEY is not defined in the environment variables.");
+    }
+    const resend = new Resend(process.env.RESEND_API_KEY);
     const { data, error } = await resend.emails.send({
       from: "A New Horizon <onboarding@resend.dev>", // Or your verified domain
       to: [email],
