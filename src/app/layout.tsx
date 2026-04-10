@@ -21,7 +21,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://anewhorizon.guide"),
+  metadataBase: new URL("https://a-guide-to-self-discipline-and-spir.vercel.app/"),
   title: "A Guide to Self-Discipline | A New Horizon",
   description: "A digital sanctuary for 'A Guide to Self-Discipline and Spirituality'. Featuring a peaceful UI and a time-saving 8-week framework.",
   manifest: "/manifest.webmanifest",
@@ -31,10 +31,10 @@ export const metadata: Metadata = {
     siteName: "A New Horizon",
     images: [
       {
-        url: "/assets/bonsai_zen.png",
+        url: "/assets/og-preview.png",
         width: 1200,
         height: 630,
-        alt: "A New Horizon Zen Bonsai",
+        alt: "A New Horizon Social Preview",
       },
     ],
     locale: "en_US",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "A New Horizon | Self-Discipline Sanctuary",
     description: "Escape the noise. Find your framework. Start the 8-week journey.",
-    images: ["/assets/bonsai_zen.png"],
+    images: ["/assets/og-preview.png"],
   },
   icons: {
     icon: "/favicon.ico",
