@@ -14,6 +14,15 @@ export async function subscribeAction(prevState: any, formData: FormData) {
       };
     }
 
+    // Check for API key presence
+    if (!process.env.RESEND_API_KEY) {
+      console.error("RESEND_API_KEY is missing from environment variables.");
+      return {
+        success: false,
+        message: "Sanctuary configuration error: API Key missing."
+      };
+    }
+
     // Real Integration: Send the email via Resend
     const result = await sendSanctuaryEmail(email);
 
@@ -21,7 +30,7 @@ export async function subscribeAction(prevState: any, formData: FormData) {
       console.warn("Mail integration failed:", result.error);
       return {
         success: false,
-        message: "The sanctuary gateway is currently unavailable. Please try again later."
+        message: `Sanctuary gateway error: ${result.error}`
       };
     }
     
