@@ -38,12 +38,12 @@ export async function sendSanctuaryEmail(email: string) {
 
     if (error) {
       console.error("Resend Error:", error);
-      return { success: false, error };
+      return { success: false, error: error.message || "Unknown mail gateway error" };
     }
 
     return { success: true, data };
-  } catch (error) {
+  } catch (error: any) {
     console.error("Internal Mail Error:", error);
-    return { success: false, error };
+    return { success: false, error: error.message || "Internal server error in mail module" };
   }
 }
